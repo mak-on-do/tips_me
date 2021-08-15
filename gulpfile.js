@@ -42,7 +42,9 @@ function jslibs() {
     return src([
             'node_modules/jquery/dist/jquery.js',
             'node_modules/slick-carousel/slick/slick.js',
-            'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
+            'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+            'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
+            'app/js/jquery.mask.js'
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
@@ -63,6 +65,8 @@ function csslibs() {
             'node_modules/normalize.css/normalize.css',
             'node_modules/slick-carousel/slick/slick.css',
             'node_modules/magnific-popup/dist/magnific-popup.css',
+            'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
+            'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css',
             'node_modules/animate.css/animate.css'
         ])
         .pipe(scss({ outputStyle: 'compressed' }))

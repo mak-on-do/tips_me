@@ -22,5 +22,8 @@
     "magnific-popup": "^1.1.0",
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "jquery-form-styler": "^2.0.2"
   }
 }
