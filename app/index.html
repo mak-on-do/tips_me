@@ -15,28 +15,36 @@
         <div class="container">
             <div class="header__inner">
 
-                <a class="logo" href="#">
-                    <img class="logo-img" src="images/logo.svg" alt="">
-                </a>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a class="menu__link--active" href="#">Получателям</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Бизнесу</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Плательщикам</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Агентам</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Поддержка</a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="header__inner-left">
+                    <div class="menu__btn">
+                        <div class="menu-btn__line"></div>
+                        <div class="menu-btn__line"></div>
+                        <div class="menu-btn__line"></div>
+                    </div>
+                    <a class="logo" href="#">
+                        <img class="logo-img" src="images/logo.svg" alt="">
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link--active" href="#">Получателям</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Бизнесу</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Плательщикам</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Агентам</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Поддержка</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
                 <div class="header__box">
                     <img class="flag ru" src="images/ru.svg" width="24px" height="20px" alt="">
                     <img class="flag eng" src="images/eng.svg" width="24px" height="20px" alt="">
@@ -44,8 +52,8 @@
                         <option>RU</option>
                         <option>ENG</option>
                     </select>
+                    <a class="header__btn-login" href="#">Вход</a>
                 </div>
-                <a class="header__btn-login" href="#">Вход</a>
             </div>
         </div>
     </header>
@@ -296,7 +304,7 @@
 
                 <div class="qrcode__box">
                     <div class="qrcode__box-image">
-                        <img src="images/tip-on-qrcode.png" alt="">
+                        <img class="qrcode__img-tip-on-qrcode" src="images/tip-on-qrcode.png" alt="">
                     </div>
                     <h4 class="qrcode__box-title">Чаевые по QR-коду</h4>
                     <p class="qrcode__box-subtitle">
@@ -312,7 +320,7 @@
                 </div>
                 <div class="qrcode__box">
                     <div class="qrcode__box-image">
-                        <img src="images/tip-on-the-link-group.png" alt="">
+                        <img class="qrcode__img-tip-on-the-link" src="images/tip-on-the-link.png" alt="">
                     </div>
                     <h4 class="qrcode__box-title">Чаевые и донаты по ссылке</h4>
                     <p class="qrcode__box-subtitle">
@@ -332,10 +340,10 @@
                 <div class="qrcode__box">
                     <div class="qrcode__box-images">
                         <div class="qrcode__box-image">
-                            <img src="images/integration-1.png" alt="">
+                            <img class="qrcode__img-integration-1" src="images/integration-1.png" alt="">
                         </div>
                         <div class="qrcode__box-image">
-                            <img src="images/integration-2.png" alt="">
+                            <img class="qrcode__img-integration-2" src="images/integration-2.png" alt="">
                         </div>
                     </div>
                     <h4 class="qrcode__box-title">Интеграция по API и SDK</h4>
@@ -354,7 +362,7 @@
                 </div>
                 <div class="qrcode__box">
                     <div class="qrcode__box-image">
-                        <img src="images/integration-with-software.png" alt="">
+                        <img class="qrcode__img-integration-with-software" src="images/integration-with-software.png" alt="">
                     </div>
                     <h4 class="qrcode__box-title">Интеграция с кассовым ПО</h4>
                     <p class="qrcode__box-subtitle">
