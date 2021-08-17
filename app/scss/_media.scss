@@ -624,13 +624,13 @@
             max-width: 226px;
         }
         &__img-tip-on-the-link {
-            max-width: 630px;
+            max-width: 590px;
         }
         &__img-integration-1 {
-            max-width: 272px;
+            max-width: 252px;
         }
         &__img-integration-2 {
-            max-width: 226px;
+            max-width: 206px;
         }
     }
     .tariffs {
@@ -640,12 +640,12 @@
             height: 375px;
         }
         &__content {
-            max-width: 545px;
+            max-width: 500px;
             position: absolute;
             z-index: 2;
             top: 0;
             left: 0;
-            padding: 40px;
+            padding: 30px;
         }
         &__content-info {
             max-width: 320px;
@@ -662,19 +662,48 @@
         &__content-discount {
             font-size: 50px;
             line-height: 63px;
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             margin-left: 20px;
         }
         &__image {
             position: absolute;
             z-index: 1;
             top: 0;
-            right: -260px;
+            right: -250px;
+            img {
+                max-width: 450px;
+            }
         }
     }
     .media-about-us .title {
         margin-bottom: 30px;
+    }
+    .footer {
+        &-top {
+            justify-content: left;
+        }
+        &-top__menu+&-top__menu {
+            margin-left: 50px;
+        }
+        &-top__box-contacts {
+            flex-basis: 100%;
+            margin-bottom: 20px;
+        }
+        &-top__contacts-list {
+            max-width: 350px;
+        }
+        &-bottom {
+            flex-wrap: wrap;
+            justify-content: left;
+        }
+        &-bottom__copyright {
+            flex-basis: 100%;
+            margin-bottom: 20px;
+        }
+    }
+    .flex-item:nth-of-type(2) {
+        order: 1;
     }
 }
 
