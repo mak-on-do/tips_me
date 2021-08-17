@@ -470,7 +470,8 @@
         font-size: 18px;
         line-height: 28px;
     }
-    h1 {
+    h1,
+    .title {
         font-size: 48px;
         line-height: 56px;
     }
@@ -485,10 +486,6 @@
     h5 {
         font-size: 20px;
         line-height: 28px;
-    }
-    .title {
-        font-size: 48px;
-        line-height: 56px;
     }
     .container {
         margin: 0 20px;
@@ -701,13 +698,161 @@
             flex-basis: 100%;
             margin-bottom: 20px;
         }
+        .flex-item:nth-of-type(2) {
+            order: 1;
+        }
     }
-    .flex-item:nth-of-type(2) {
-        order: 1;
+}
+
+@media (max-width: 640px) {
+    h1,
+    .title {
+        font-size: 40px;
+        line-height: 49px;
+    }
+    .banner {
+        &__inner {
+            padding: 20px 0 20px 10px;
+        }
+        &__info-buttons {
+            display: block;
+        }
+        &__info-btn.get-a-tip {
+            margin-bottom: 20px;
+        }
+        &__info-btn.pay-a-tip {
+            margin-left: 0;
+        }
+        &__image {
+            margin-left: 0;
+        }
+        &__image-bg img {
+            max-width: 400px;
+        }
+        &__image::before {
+            width: 150px;
+            height: 150px;
+            left: 30px;
+            bottom: 20px;
+        }
+        &__image-qrcode {
+            width: 90px;
+            height: 90px;
+            left: 130px;
+            bottom: 25px;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        &__image-smileyface {
+            width: 55px;
+            height: 55px;
+            right: 46px;
+            top: 0;
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    .title {
+        margin-bottom: 30px;
+    }
+    .content-block {
+        margin-bottom: 30px;
+        &__info,
+        &__inner.reverse .content-block__info {
+            padding: 0 20px;
+            margin-bottom: 30px;
+        }
+        &__img img {
+            max-width: 450px;
+        }
+    }
+    .qrcode {
+        &__img-tip-on-qrcode,
+        &__img-integration-with-software {
+            max-width: 174px;
+        }
+        &__img-tip-on-the-link {
+            max-width: 400px;
+        }
+        &__img-integration-1 {
+            max-width: 160px;
+        }
+        &__img-integration-2 {
+            max-width: 140px;
+        }
+    }
+    .connection {
+        &__form-wrapper {
+            max-width: 400px;
+        }
+        &__form {
+            padding: 20px 20px 40px;
+        }
+        &__info {
+            padding: 12px 20px 12px 20px;
+        }
+    }
+    .footer {
+        &-top__menu+&-top__menu {
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+        &-top__box {
+            flex-wrap: wrap;
+        }
+        &-form__inner {
+            margin-left: 0px;
+        }
+        &-bottom__payinfo {
+            flex-wrap: wrap;
+        }
+        &-bottom__payinfo-text {
+            display: block;
+        }
+        &-bottom__social {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .tariffs {
+        &__image {
+            display: none;
+        }
+        &__content {
+            flex-wrap: wrap;
+            .flex-elem:nth-of-type(2) {
+                order: -1;
+            }
+        }
+        &__content-discount {
+            margin-bottom: 10px;
+        }
     }
 }
 
 @media (max-width: 490px) {
+    body {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .container {
+        margin: 0 10px;
+    }
+    h1,
+    .title {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    h5 {
+        font-size: 17px;
+        line-height: 22px;
+    }
     .header {
         .logo {
             margin-left: 10px;
@@ -718,6 +863,55 @@
         &__btn-login {
             margin-left: 10px;
             min-width: 70px;
+        }
+    }
+    .content-block {
+        &__info,
+        &__inner.reverse .content-block__info {
+            padding: 0;
+            margin-bottom: 30px;
+        }
+        &__img img {
+            max-width: 310px;
+        }
+    }
+    .qrcode .title {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .qrcode {
+        &__img-tip-on-qrcode,
+        &__img-integration-with-software {
+            max-width: 115px;
+        }
+        &__img-tip-on-the-link {
+            max-width: 265px;
+        }
+        &__img-integration-1 {
+            max-width: 90px;
+        }
+        &__img-integration-2 {
+            max-width: 80px;
+        }
+    }
+    .tariffs {
+        &__content {
+            padding: 20px;
+        }
+        &__content-title {
+            font-size: 20px;
+            line-height: 28px;
+        }
+        &__content-link {
+            padding: 17px 35px;
+        }
+    }
+    .connection {
+        &__form-wrapper {
+            padding: 5px;
+        }
+        &__form {
+            padding: 20px 15px 30px;
         }
     }
     .media-about-us__slider-wrapper {
